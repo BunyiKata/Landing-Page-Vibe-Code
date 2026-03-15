@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+.glass {
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.text-gradient {
+    background: linear-gradient(to right, #ffffff 20%, #f97316 50%, #ffffff 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+}
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.Typewriter__cursor {
+    color: #f97316 !important;
+    -webkit-text-fill-color: #f97316 !important;
+}
+.bento-card {
+    background: #0a0a0a;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.bento-card:hover {
+    border-color: #f97316;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.1);
+}
+.glow-orange {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+@keyframes slideIn {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.animate-slide {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+/* Custom Pricing Styles */
+.pricing-card {
+    border: 1px solid #3f2a1d;
+    position: relative;
+}
+.badge-paling-laris {
+    background: linear-gradient(to right, #f97316, #ea580c);
+    position: absolute;
+    top: -16px;
+    right: 50px;
+    padding: 4px 16px;
+    border-radius: 99px;
+    font-weight: 800;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+}
+.strike-price {
+    position: relative;
+    display: inline-block;
+}
+.strike-line {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    right: -5px;
+    height: 3px;
+    background-color: #f97316;
+    transform: rotate(-10deg);
+}
+.btn-impact {
+    background: linear-gradient(to right, #f97316, #ea580c);
+    transition: all 0.3s ease;
+}
+.btn-impact:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+}
