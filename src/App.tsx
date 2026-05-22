@@ -141,6 +141,8 @@ export default function App() {
           </div>
           <a
             href="https://toyyibpay.com/VCUP-IR"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-orange-600 hover:bg-orange-700 text-white text-[10px] font-black px-4 md:px-6 py-2.5 rounded-full transition shadow-lg shadow-orange-500/20"
           >
             Daftar Sekarang
@@ -661,7 +663,7 @@ export default function App() {
         </ul>
 
         {/* Button */}
-        <a href="https://toyyibpay.com/VCUP-IR" className="btn-impact block w-full py-5 md:py-6 rounded-3xl text-white text-lg md:text-xl font-black tracking-tight flex items-center justify-center gap-2">
+        <a href="https://toyyibpay.com/VCUP-IR" target="_blank" rel="noopener noreferrer" className="btn-impact block w-full py-5 md:py-6 rounded-3xl text-white text-lg md:text-xl font-black tracking-tight flex items-center justify-center gap-2">
           <span>⚡</span> Dapatkan Sekarang — RM99 Sahaja
         </a>
 
